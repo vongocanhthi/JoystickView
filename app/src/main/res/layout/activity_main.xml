@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.at.test.JoystickView
+            android:id="@+id/joystick"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            app:JV_backgroundSizeRatio="83%"
+            custom:JV_autoReCenterButton="true"
+            custom:JV_backgroundColor="#dbdbdb"
+            custom:JV_borderColor="#8A8A8A  "
+            custom:JV_borderWidth="4dp"
+            custom:JV_buttonColor="#8A8A8A"
+            app:JV_arrowColor="#b0b0b0"
+            app:JV_arrowSize="15dp"
+            custom:JV_buttonSizeRatio="18%"
+            custom:JV_fixedCenter="false" />
+
+        <TextView
+            android:id="@+id/txtDirection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="center"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+
+</ScrollView>
